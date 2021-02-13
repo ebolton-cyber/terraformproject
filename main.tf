@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 terraform {
   required_providers {
     aws = {
@@ -64,12 +64,4 @@ resource "aws_s3_bucket" "bucket" {
 
 output "server_ip" {
     value = aws_instance.web.*.public_dns
-=======
-provider "aws"{
-region = "us-east-1"
-}
-
-resource "aws_vpc" "myvpc" {
-    cidr_block = "10.0.0.0/16"
->>>>>>> 4b1879f8abc85090cca268597ec5839a9373da18
-}
+  }
